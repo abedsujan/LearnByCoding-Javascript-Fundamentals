@@ -8,10 +8,15 @@ Learn the use case of variable, object, function, condition, naming convention
 
 ``` In following simple steps:```
 > Step 0: `console`     : First, build dummy game using console only and implement in later steps 
+
 > Step 1: `variable`    : Say 'Hello' to team player using variable
+
 > Step 2: `object`      : Use object to store player information
+
 > Step 3: `function`    : Remove duplicate code using function
+
 > Step 4: `condition`   : Find the winner team
+
 > Step 5: `refactoring` : Remove more duplicate code
 
 ## Final Output
