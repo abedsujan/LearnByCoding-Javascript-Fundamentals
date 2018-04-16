@@ -21,7 +21,8 @@ Learn the use case of variable, object, function, condition, naming convention
 
 ## Final Output
 
-`****************** ___ Number Game ____ *******************
+```
+****************** ___ Number Game ____ *******************
 
 *************** ___ Find the highest scored team ____ ***********
 
@@ -55,4 +56,5 @@ Hello Mohammed! Your points: 2200
 
 Team score: 4740
 
-_____________ *** TEAM 2 wins! *** _________________`
+_____________ *** TEAM 2 wins! *** _________________
+```
