@@ -4,6 +4,15 @@
  * @returns none 
  */
 function sayHello(player) {
+
+    const player1Row = document.getElementById('player-' + player.id);
+
+    const playerRowTemplate = `
+                <td>${player.name}</td>
+                <td class="text-center">${getScore(player)}</td>
+    `;
+
+    player1Row.innerHTML = playerRowTemplate;
     console.log('Hello ' + player.name + '!' + ' Your points: ' + getScore(player));
 }
 
@@ -40,9 +49,9 @@ function displayTeam(team) {
     team.players.forEach(player => sayHello(player));
     teamScore(team);
     console.log('Team score: ' + team.totalTeamScore);
-  }
+}
 
-  
+
 
 function displayWinner() {
     let winner;
@@ -51,20 +60,20 @@ function displayWinner() {
     // Otherwise Team 3 is the default winner
     // Bug: in the following logic there is bug, if more than one have has equal score if doesn't work
     // For now lets keep it simple, we will be fix the bug in later step  
-  
+
     if (team1.totalTeamScore > team2.totalTeamScore && team1.totalTeamScore > team3.totalTeamScore) {
-      // modify this
-      /* winner = 'TEAM 1'; */
-      winner = team1;
-  
+        // modify this
+        /* winner = 'TEAM 1'; */
+        winner = team1;
+
     } else if (team2.totalTeamScore > team1.totalTeamScore && team2.totalTeamScore > team3.totalTeamScore) {
-      /*  winner = 'TEAM 2'; */
-      winner = team2;
+        /*  winner = 'TEAM 2'; */
+        winner = team2;
     } else {
-      /*  winner = 'TEAM 3'; */
-      winner = team3;
+        /*  winner = 'TEAM 3'; */
+        winner = team3;
     }
-  
+
     // console.log('_____________ *** ' + winner + ' wins! *** _________________');
     console.log('_____________ *** ' + winner.name + ' wins! *** _________________');
-  }
+}

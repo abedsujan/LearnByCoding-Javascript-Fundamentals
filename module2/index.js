@@ -1,6 +1,15 @@
 console.log('****************** ___ Number Game ____ *******************');
 console.log('*************** ___ Find the highest scored team ____ ***********');
 
+
+// Insert Id to players
+let increment = 1;
+players.map(function(player){
+  player.id = increment++;
+});
+
+console.log(players);
+
 let team1 = {
   'name': 'TEAM 1',
   'players': [players[0], players[1], players[2]],
