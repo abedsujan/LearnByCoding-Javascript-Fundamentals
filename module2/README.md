@@ -24,3 +24,8 @@ Learn the use case of Html/CSS, Arrays/JSON, Array Manipulation(map, filter and 
 4. Open `index.html` in any browser usually`double click` on the file
 
 5. Congratulation! You are all set. Now follow the instruction in `index.js` file and Start doing `ToDo excercise`
+
+> Step 1: `Array` : Create array 'players' to store all players information
+ >>> TODO: convert below player1,2,3,4... to players array
+ >>> TODO: use player form players array (as defined above)
+ >>> TODO: move the find winner logic into a function
