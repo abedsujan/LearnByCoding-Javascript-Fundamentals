@@ -29,3 +29,11 @@ Learn the use case of Html/CSS, Arrays/JSON, Array Manipulation(map, filter and 
  >>> TODO: convert below player1,2,3,4... to players array
  >>> TODO: use player form players array (as defined above)
  >>> TODO: move the find winner logic into a function
+
+> Step 2: `Loop` : Use loop to simplify redundante code
+ >>> TODO: Unnecessary assign statement, simplify the below method
+ >>> TODO: Use loop syntext to make the  getScore logic scalable
+ >>> TODO: Use loop syntext to make the displayTeamAndReturnScore logic scalable
+ >>> TODO: Assing team score in team object instead of return the score
+ >>> TODO: Refactor function name to match with the purpose
+ >>> TODO: fix winner undefined error
