@@ -1,8 +1,18 @@
-// Step 2: `Loop` : Use loop to simplify redundante code
+// Step 3: `Code Seperation` : Seperation business login into difference file(s) 
 /* 
  * Let's improve our code with javascritpt object.
  * - TODO excercise
  */
+
+/* -----------------------------------------------
+ *  TODO: Keep the file simple. Separate business logic
+ *  - re organize code into file(s) 
+ *  TODO: remove uncessary comments
+ *  hint:  
+  create script.js and move all the business logic there. 
+ * -----------------------------------------------
+ */
+
 
 let players = [{
     name: 'Obi',
@@ -84,64 +94,31 @@ function sayHello(player) {
   console.log('Hello ' + player.name + '!' + ' Your points: ' + getScore(player));
 }
 
-/* -----------------------------------------------------------------------------------------
- * TODO: unnecessary assign statement, simplify the below method
- *
- * Hint:
-  
-  return statement;
- * -----------------------------------------------------------------------------------------
- */
+// [TODO]: Solution
 /**
  * @description Calculate player points
  * @param {object} player - The player object should contain name, digit, zone
  * @returns {number} Score of the player, multiple digit and zone
  */
 function getScore(player) {
-  const score = player.digit * player.zone;
-  return score;
+  return player.digit * player.zone;
 }
 
-/* -----------------------------------------------------------------------------------------
- * TODO: use loop syntext to make the  getScore logic scalable
- * - it should fit for any number of players in the team. 
- * - right now it supports only 3 players in each team
- *  
- * Hint: 
- 
-  array.forEach(function(item){
-    // code
-  })
- * -----------------------------------------------------------------------------------------
- */
+
+// [TODO]: Solution
 /**
  * @description Calculate team total score
  * @param {object} team - team object contains players information
  * @returns {number} Sum of three player point as team score 
  */
-function teamScore(team) {
-  let score1 = getScore(team.players[0]);
-  let score2 = getScore(team.players[1]);
-  let score3 = getScore(team.players[2]);
-
-  return score1 + score2 + score3;
+function generateTeamScore(team) {
+  let totalScore = 0;
+  team.players.forEach(function (player) {
+    totalScore = totalScore + getScore(player);
+  });
+  team.totalTeamScore = totalScore;
 }
 
-/* -------------------------------------------------------------------------
- * TODO: use loop syntext to make the displayTeamAndReturnScore logic scalable
- * TODO: assing team score in team object instead of return the score
- * TODO: refactor function name to match with the purpose 
- *  
- * Hint: 
- 
-  array.forEach(function(item){
-    // code
-  })
-  
-  displayTeam() // this could a method name
-
- * ---------------------------------------------------------------------------
- */
 /**
 // [TODO]: Solution
 /**
@@ -149,35 +126,27 @@ function teamScore(team) {
  * @param {string} team - Team name
  * @returns {number} Team score
  */
-function displayTeamAndReturnScore(team) {
+function displayTeam(team) {
+
+  generateTeamScore(team); // to calculate and store team score
 
   console.log('_____ ' + team.name + '  ______');
-  sayHello(team.players[0]);
-  sayHello(team.players[1]);
-  sayHello(team.players[2]);
+  team.players.forEach(player => sayHello(player));
 
-  let totalTeamScore = teamScore(team);
-  console.log('Team score: ' + totalTeamScore);
-
-  return totalTeamScore;
+  console.log('Team score: ' + team.totalTeamScore);
 }
 
 console.log('****************** ___ Number Game ____ *******************');
 console.log('*************** ___ Find the highest scored team ____ ***********');
 
-/* -------------------------------------------------------------------------
- * TODO: fix undefined error in winner method below
- * ---------------------------------------------------------------------------
- */
-
 // [ToDo]: Solution
 // Display teams summary and store in variable to find the winner
-let totalScoreForTeam1 = displayTeamAndReturnScore(team1);
-let totalScoreForTeam2 = displayTeamAndReturnScore(team2);
-let totalScoreForTeam3 = displayTeamAndReturnScore(team3);
+displayTeam(team1);
+displayTeam(team2);
+displayTeam(team3);
 
 // [ToDo]: Solution
-function displayWinner(team1, team2, team3) {
+function displayWinner() {
   let winner;
   // Firstly check if Team 1 is winner or not
   // Seconly check if Team 2 is winner or not
@@ -202,4 +171,4 @@ function displayWinner(team1, team2, team3) {
   console.log('_____________ *** ' + winner.name + ' wins! *** _________________');
 }
 
-displayWinner(totalScoreForTeam1, totalScoreForTeam2, totalScoreForTeam3);
+displayWinner(); // Call this method to find and show winner
