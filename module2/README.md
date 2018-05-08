@@ -31,9 +31,13 @@ Learn the use case of Html/CSS, Arrays/JSON, Array Manipulation(map, filter and 
  >>> TODO: move the find winner logic into a function
 
 > Step 2: `Loop` : Use loop to simplify redundante code
- >>> TODO: Unnecessary assign statement, simplify the below method
- >>> TODO: Use loop syntext to make the  getScore logic scalable
- >>> TODO: Use loop syntext to make the displayTeamAndReturnScore logic scalable
- >>> TODO: Assing team score in team object instead of return the score
- >>> TODO: Refactor function name to match with the purpose
- >>> TODO: fix winner undefined error
+ >>> TODO: unnecessary assign statement, simplify the below method
+ >>> TODO: use loop syntext to make the  getScore logic scalable
+ >>> TODO: use loop syntext to make the displayTeamAndReturnScore logic scalable
+ >>> TODO: assing team score in team object instead of return the score
+ >>> TODO: refactor function name to match with the purpose
+ >>> TODO: fix undefined error in winner method below
+
+> Step 3: `Code Seperation` : Seperation business login into difference file(s) 
+ >>> TODO: Keep the file simple. Separate business logic
+ >>> TODO: remove uncessary comments
