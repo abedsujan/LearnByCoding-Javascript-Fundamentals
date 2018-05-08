@@ -1,13 +1,13 @@
-// Step 5: Implement html/css template
+// Step 4: `html/css` : Implement html/css template
 /* 
  * Let's improve our code with javascritpt object.
  * - TODO excercise
  */
 
  /* -----------------------------------------------
- *  ToDo: Remove all console log
- *  Todo: Create a basic html/css bootstrap template 
- *  Todo: Implement the template and show teams  
+ *  TODO: Remove all console log
+ *  TODO: Create a basic html/css bootstrap template
+ *  TODO: Implement the template and show teams
  * -----------------------------------------------
  */
 
