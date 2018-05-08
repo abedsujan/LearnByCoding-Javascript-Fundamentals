@@ -1,46 +1,86 @@
 let players = [{
-    name: 'Obi',
+    name: 'amritamaloo',
     digit: 27,
     zone: 2
   },
   {
-    name: 'Haseeb',
+    name: 'bader508',
     digit: 71,
-    zone: 88
+    zone: 3
   },
   {
-    name: 'Sirin',
+    name: 'Behnam07',
     digit: 28,
     zone: 2
   },
   {
-    name: "Shaza",
+    name: "Breedon-M",
     digit: 76,
-    zone: 200
+    zone: 1
   },
   {
-    name: "Hossein",
+    name: "chandu87",
     digit: 52,
-    zone: 31
+    zone: 4
   },
   {
-    name: "Anwer",
+    name: "chklueter",
     digit: 47,
     zone: 2
   },
   {
-    name: 'Majid',
+    name: 'chsaqib',
     digit: 50,
-    zone: 30
+    zone: 1
   },
   {
-    name: 'Jackline',
+    name: 'Hedayatsamadi123',
     digit: 52,
-    zone: 20
+    zone: 3
   },
   {
-    name: 'Mohammed',
+    name: 'hosseinz',
     digit: 40,
-    zone: 55
+    zone: 3
+  },
+  {
+    name: 'hsafay',
+    digit: 40,
+    zone: 5
+  },
+  {
+    name: 'jacklinenassozi',
+    digit: 40,
+    zone: 6
+  },
+  {
+    name: 'lial80',
+    digit: 40,
+    zone: 2
+  },
+  {
+    name: 'Majd-Darraj',
+    digit: 40,
+    zone: 7
+  },
+  {
+    name: 'paredesrichard',
+    digit: 40,
+    zone: 2
+  },
+  {
+    name: 'ShazaMaher',
+    digit: 40,
+    zone: 8
+  },
+  {
+    name: 'Siri93',
+    digit: 40,
+    zone: 9
+  },
+  {
+    name: 'smauddin',
+    digit: 40,
+    zone: 1
   }
 ];
