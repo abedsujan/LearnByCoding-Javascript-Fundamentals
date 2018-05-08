@@ -41,3 +41,8 @@ Learn the use case of Html/CSS, Arrays/JSON, Array Manipulation(map, filter and 
 > Step 3: `Code Seperation` : Seperation business login into difference file(s) 
  >>> TODO: Keep the file simple. Separate business logic
  >>> TODO: remove uncessary comments
+
+> Step 4: `html/css` : Implement html/css template
+ >>> TODO: Remove all console log
+ >>> TODO: Create a basic html/css bootstrap template
+ >>> TODO: Implement the template and show teams
