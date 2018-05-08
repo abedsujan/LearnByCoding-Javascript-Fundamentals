@@ -52,9 +52,9 @@ function displayTeam(team) {
 }
 
 
+let winner;
 
 function displayWinner() {
-    let winner;
     // Firstly check if Team 1 is winner or not
     // Seconly check if Team 2 is winner or not
     // Otherwise Team 3 is the default winner
