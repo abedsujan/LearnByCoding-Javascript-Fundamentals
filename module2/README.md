@@ -46,3 +46,8 @@ Learn the use case of Html/CSS, Arrays/JSON, Array Manipulation(map, filter and 
  >>> TODO: Remove all console log
  >>> TODO: Create a basic html/css bootstrap template
  >>> TODO: Implement the template and show teams
+
+> Step 5: `DOM manupulation` : Update players name and score
+ >>> TODO: in html template update players name and score
+ >>> TODO: add event handler in find winner button
+ >>> TODO: on click show the winner team info and hide the button
