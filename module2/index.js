@@ -1,14 +1,14 @@
-// Step 4: `html/css` : Implement html/css template
+// Step 5: `DOM manupulation` : Update players name and score
 /* 
  * Let's improve our code with javascritpt object.
  * - TODO excercise
  */
 
- /* -----------------------------------------------
- *  TODO: Remove all console log
- *  TODO: Create a basic html/css bootstrap template
- *  TODO: Implement the template and show teams
- * -----------------------------------------------
+ /* ------------------------------------------------------------
+ *  TODO: in html template update players name and score
+ *  TODO: add event handler in find winner button 
+ *  TODO: on click show the winner team info and hide the button
+ * -------------------------------------------------------------
  */
 
 let team1 = {
@@ -28,10 +28,6 @@ let team3 = {
   'players': [players[6], players[7], players[8]],
   'totalTeamScore': 0
 };
-
-// First Two line of the output
-console.log('****************** ___ Number Game ____ *******************');
-console.log('*************** ___ Find the highest scored team ____ ***********');
 
 // Display teams summary and store in variable to find the winner
 displayTeam(team1);
