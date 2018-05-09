@@ -55,3 +55,11 @@ Learn the use case of Html/CSS, Arrays/JSON, Array Manipulation(map, filter and 
 
 > Step 6: `ajax` : XMLHttpRequest
  >>> TODO: Replace players github username to full name(if exsits)
+
+ > Step 7: `Interactive` : Insert player 
+ >>> TODO: read username using the input field 
+ >>> TODO: add the player in the game if it matches with predefined players list(data.js) 
+ >>> TODO: update the added player in UI if matches
+ >>> TODO: Disable `find winner` as default
+ >>> TODO: Enable `find winner` button when 9 players got inserted
+ 
