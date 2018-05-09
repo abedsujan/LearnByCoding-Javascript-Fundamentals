@@ -51,3 +51,7 @@ Learn the use case of Html/CSS, Arrays/JSON, Array Manipulation(map, filter and 
  >>> TODO: in html template update players name and score
  >>> TODO: add event handler in find winner button
  >>> TODO: on click show the winner team info and hide the button
+
+
+> Step 6: `ajax` : XMLHttpRequest
+ >>> TODO: Replace players github username to full name(if exsits)

@@ -4,7 +4,13 @@
  * @returns none 
  */
 function sayHello(player) {
-    // TODO
+    const player1Row = document.getElementById('player-' + player.id);
+
+    const playerRowTemplate = `
+                <td>${player.name}</td>
+                <td class="text-center">${getScore(player)}</td>
+    `;
+    player1Row.innerHTML = playerRowTemplate;
 }
 
 /**
@@ -43,7 +49,9 @@ function displayTeam(team) {
  * @description Find winner and show the winner team info
  * @returns none
  */
+
 function displayWinner() {
+
     let winner;
     // Firstly check if Team 1 is winner or not
     // Seconly check if Team 2 is winner or not
@@ -59,4 +67,21 @@ function displayWinner() {
     } else {
         winner = team3;
     }
+
+    document.getElementById('find-winner').style.display = 'none';
+    document.getElementById('winner').style.display = 'block';
+
+    let winnerTeamDiv = document.getElementById('winner-team');
+    let displayPlayer = '';
+
+    winner.players.forEach(player => {
+        displayPlayer += player.name + ' ';
+    });
+
+    winnerTeamDiv.innerHTML = `
+     <h2 id="winner-team">${winner.name}</h2>
+      <p id="winner-score" class="lead">Totoal Score: ${winner.totalTeamScore}</p>
+      <p>${displayPlayer}</p>
+     `;
+    
 }
