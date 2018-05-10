@@ -7,23 +7,30 @@ Learn the use case of Html/CSS, Arrays/JSON, Array Manipulation(map, filter and 
 
 ``` In following simple steps:```
 
-> Step 0: `Clone Project` : Stepup project, goto module-2 dir.
+> Step 0: `Install` : Stepup project, goto module-2 dir.
 
- >>>1. install: 
-   `git clone git@github.com:abedsujan/LearnByCoding-Javascript-Fundamentals.git` 
-   -or-
-   Click to download the project: https://github.com/abedsujan/LearnByCoding-Javascript-Fundamentals/tree/module-2/step0
-  
- >>>2. `git checkout module-2/step0` - Or - `skip for manual setup`
+>> ### `Git` install:
+>>> run in terminal or cmd promot `git clone git@github.com:abedsujan/LearnByCoding-Javascript-Fundamentals.git`
 
- >>>3. open module to in any Editor/IDE 
-   `cd LearnByCoding-Javascript-Fundamentals/module2` and open project in IDE
-   -or- 
-   goto to `LearnByCoding-Javascript-Fundamentals/module2` and open files in IDE
-	
- >>>4. Open `index.html` in any browser usually`double click` on the file
+>>> `git checkout module-2/step0`  -- for step0
 
- >>>5. Congratulation! You are all set. Now follow the instruction in `index.js` file and Start doing `ToDo excercise`
+>>> `git checkout module-2/step1`  -- for step1
+
+>>> like wise  `git checkout module-2/step[0]` -- for any
+ 
+>> ### -or- `Manual` install:
+>>> Click to download the project: https://github.com/abedsujan/LearnByCoding-Javascript-Fundamentals/tree/module-2/step0
+
+>>> Click to download the project: https://github.com/abedsujan/LearnByCoding-Javascript-Fundamentals/tree/module-2/step1
+
+>> ### Open module to in any Editor/IDE
+>>> Goto to `LearnByCoding-Javascript-Fundamentals/module2` directory and open project in IDE or Editor or textEditor
+
+>> ### Run `index.html` in any browser
+>>> usually`double click` on the file does the magic
+
+>> ### Congratulation! 
+>>>You are all set. Now follow the instruction in `index.js` file and Start doing `ToDo excercise`
 
 > Step 1: `Array` : Create array 'players' to store all players information
  >>> TODO: convert below player1,2,3,4... to players array
